@@ -5,3 +5,7 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
+<resource-env-ref>
+    <resource-env-ref-name>jdbc/testdb</resource-env-ref-name>
+    <resource-env-ref-type>javax.sql.DataSource</resource-env-ref-type>
+</resource-env-ref>
