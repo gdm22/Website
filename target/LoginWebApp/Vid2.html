@@ -1,0 +1,51 @@
+<!DOCTYPE HTML >
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title> Video2</title>
+<script type="text/javascript" language="javascript">
+function print_stat(){
+     var video = document.getElementById('video');
+     var mp4 = document.getElementById('mp4');
+     var username = "admin"
+     var password = "changeit"
+     var floc=""
+     function make_base_auth(user, password) {
+       var tok = user + ':' + password;
+       var hash = Base64.encode(tok);
+       return "Basic " + hash;
+     }
+     jQuery.ajax({
+      type: 'GET',
+      dataType: "json",
+      async: false ,
+      url: 'http://35.231.180.212/myflix/videos?filter={%22video.uuid%22:%222%22}',
+      contentType: 'application/json; charset=utf-8',
+      beforeSend: function (xhr) {
+      xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));}
+      ,
+      success: function (data) {
+        console.log(data);
+        console.log(data._embedded);
+        console.log(data._embedded[0].video.ip);
+        floc= data._embedded[0].video.ip +data._embedded[0].video.file;
+      }
+    });
+  mp4.src = floc
+  video.load();
+}
+</script>
+</head>
+<body onload="print_stat()" >
+<div id="divVideo">
+<video id="video" controls width="560">
+<source id="mp4" type="video/mp4"/>
+</video>
+</div>
+<p>
+<input type="button" onclick="location.href='index.jsp';" value="Back to Main Page" />
+</p>
+</body>
+</html>
