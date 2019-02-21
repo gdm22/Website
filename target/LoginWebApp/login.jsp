@@ -3,11 +3,10 @@
     String userName = request.getParameter("uname");    
     String password = request.getParameter("password");
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jwt",
-            "root", "mukesh");
+    Connection con = DriverManager.getConnection("jdbc:mysql://34.73.232.183:3306/testdb?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT","root", "1369");
     Statement st = con.createStatement();
     ResultSet rs;
-    rs = st.executeQuery("select * from user where userName='" + userName + "' and password='" +password + "'");
+    rs = st.executeQuery("select * from USER where userName='" + userName + "' and password='" +password + "'");
     if (rs.next()) {
         session.setAttribute("userid", userName);
         response.sendRedirect("success.jsp");
