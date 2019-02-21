@@ -15,6 +15,7 @@
 <title> MyFlix</title>
 </head>
 <body>
+<a href='logout.jsp'>Log out</a>
 <input type="button" onclick="location.href='Vid1.html';" value="Big bucks bunny" />
 <input type="button" onclick="location.href='Vid2.html';" value="Sintel" />
 <input type="button" onclick="location.href='Vid3.html';" value="Video3" />
