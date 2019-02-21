@@ -1,15 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context antiJARLocking="true" path="/Myflix">
- <Resource
-	name="jdbc/testdb"
-	auth="Container"
-	type="javax.sql.DataSource"
-	maxActive="1500"
-	maxIdle="30"
-	maxWait="10000"
-	driverClassName="com.mysql.jdbc.Driver"
-	url="jdbc:mysql://34.73.232.183:3306/testdb"
-	username="root"
-	password="1369"
-	/>
 </Context>
