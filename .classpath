@@ -7,7 +7,7 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar">
+	<classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
