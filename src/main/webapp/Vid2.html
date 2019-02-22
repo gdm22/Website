@@ -6,7 +6,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <title> Video2</title>
 <script type="text/javascript" language="javascript">
-function print_stat(){
+function get_ip(){
      var video = document.getElementById('video');
      var mp4 = document.getElementById('mp4');
      var username = "admin"
@@ -38,14 +38,14 @@ function print_stat(){
 }
 </script>
 </head>
-<body onload="print_stat()" >
+<body onload="get_ip()" >
 <div id="divVideo">
 <video id="video" controls width="560">
 <source id="mp4" type="video/mp4"/>
 </video>
 </div>
 <p>
-<input type="button" onclick="location.href='index.jsp';" value="Back to Main Page" />
+<input type="button" onclick="location.href='cat.jsp';" value="Back to Main Page" />
 </p>
 </body>
 </html>
