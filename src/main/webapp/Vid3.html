@@ -12,7 +12,7 @@
 
 <script type="text/javascript" language="javascript">
 
-function print_stat(){
+function get_ip(){
 
      var video = document.getElementById('video');
 
@@ -76,7 +76,7 @@ function print_stat(){
 
 </head>
 
-<body onload="print_stat()" >
+<body onload="get_ip()" >
 
 <div id="divVideo">
 
@@ -85,7 +85,7 @@ function print_stat(){
 <source id="mp4" type="video/mp4"/>
 
 </video>
-
+<input type="button" onclick="location.href='cat.jsp';" value="Back to Main Page" />
 </div>
 
 </body>
