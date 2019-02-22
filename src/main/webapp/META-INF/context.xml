@@ -6,7 +6,7 @@
 	type="javax.sql.DataSource"
 	maxActive="1500"
 	maxIdle="30"
-	maxWait="10000"
+	maxWait="30"
 	driverClassName="com.mysql.jdbc.Driver"
 	url="jdbc:mysql://34.73.232.183:3306/testdb"
 	username="root"
