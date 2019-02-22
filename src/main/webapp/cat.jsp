@@ -15,8 +15,8 @@
 <title> MyFlix</title>
 </head>
 <body>
-<input type="button" onclick="location.href='Vid1.html';" value="Big bucks bunny" />
+<input type="button" onclick="location.href='Vid1.html';" value="Big Bucks Bunny" />
 <input type="button" onclick="location.href='Vid2.html';" value="Sintel" />
-<input type="button" onclick="location.href='Vid3.html';" value="Video3" />
+<input type="button" onclick="location.href='Vid3.html';" value="TearsOfSteel" />
 </body>
 </html>
